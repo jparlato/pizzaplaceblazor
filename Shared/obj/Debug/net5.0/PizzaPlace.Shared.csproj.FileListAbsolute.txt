@@ -1,0 +1,11 @@
+C:\Users\jparl\source\repos\PizzaPlace\Shared\bin\Debug\net5.0\PizzaPlace.Shared.deps.json
+C:\Users\jparl\source\repos\PizzaPlace\Shared\bin\Debug\net5.0\PizzaPlace.Shared.dll
+C:\Users\jparl\source\repos\PizzaPlace\Shared\bin\Debug\net5.0\ref\PizzaPlace.Shared.dll
+C:\Users\jparl\source\repos\PizzaPlace\Shared\bin\Debug\net5.0\PizzaPlace.Shared.pdb
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\PizzaPlace.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\PizzaPlace.Shared.AssemblyInfoInputs.cache
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\PizzaPlace.Shared.AssemblyInfo.cs
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\PizzaPlace.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\PizzaPlace.Shared.dll
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\ref\PizzaPlace.Shared.dll
+C:\Users\jparl\source\repos\PizzaPlace\Shared\obj\Debug\net5.0\PizzaPlace.Shared.pdb
