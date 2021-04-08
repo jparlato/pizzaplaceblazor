@@ -11,14 +11,46 @@
 			@pizza.Price
 		</div>
 		<div class="col">
-			<img src="@SpicinessImage(pizza.Spiciness)"  alt="@pizza.Spiciness"   />    
-		</div>   
-		<div class="col">    
-			<button class="btn btn-success" @onclick="@(() => AddToBasket(pizza))">
-			Add
-			</button>    
-		</div>  
+			<img src="@SpicinessImage(pizza.Spiciness)"  alt="@pizza.Spiciness"   />
+		</div>
+		<div class="col">
+			<button class="btn btn-success"  @onclick="@(() => AddToBasket(pizza))">
+				Add
+			</button>
+		</div>
 	</div>
+	<!-- End menu -->
+	<!-- Shipping Basket -->
+
+}
+
+@if (State.Basket.Orders.Any())
+{
+	<h1>Your current order:</h1>
+
+	@foreach (var (pizza, pos) in State.Basket.Orders.Select(
+	  (id, pos) => (State.Menu.GetPizza(id), pos)))
+	{
+		<div class="row">
+			<div class="col">
+				@pizza.Name
+			</div>
+			<div class="col">
+				@pizza.Price
+			</div>
+			<div class="col">
+				<button class="btn btn-danger" @onclick="@(() => RemoveFromBaskit(pos))">Remove</button>
+
+			</div>
+		</div>
+	}
+	<div class="row">
+		<div class="col"> Total:</div>
+		<div class="col"> @State.TotalPrice </div>
+		<div class="col"> </div>
+	</div>
+
+}
 
 
 @code {
@@ -45,5 +77,11 @@
 		Console.WriteLine($"Added pizza {pizza.Name}");
 		State.Basket.Add(pizza.Id);
 	}
-}
+
+	private void RemoveFromBaskit(int pos)
+	{
+		Console.WriteLine($"Removed pizza at pos {pos}");
+		State.Basket.Remove(pos);
+	}
+
 }
